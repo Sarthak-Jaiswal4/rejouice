@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#page1{
+    height:100vh;
+    width:100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#menubar{
+    width: 100%;
+    height: 60%;
+    background-color: #FF5F38;
+    position: absolute;
+    z-index: -3;
+    padding: 7vh 4vh;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+#bar{
+    display: flex;
+    align-items: center;
+    
+}
+#left-bar{
+    display: flex;
+    width: 50%;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+#left-bar h5{
+    font-family: sans-serif;
+    font-size: 1vw;
+    font-weight: 100;
+}
+.videos{
+    height: 30% !important;
+    width: 30% !important;
+    object-fit: cover;
+}
+#right-bar{
+    display: flex;
+    align-items: left;
+    width: 50%;
+    justify-content: left;
+    flex-direction: column;
+}
+#right-bar h2{
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 2.5vw;
+    font-weight: 100;
+    transition: all ease-in;
+}
+#right-bar h2:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#rightest{
+    font-family: sans-serif;
+    display: flex;
+    font-weight: 200;
+    font-size: 1.4vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#page1 video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.541); */
+    position: relative;
+    color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 5vh;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 200;
+}
+#page1-content{
+    font-size: 10vw;
+    font-weight: 100;
+    /* line-height: 27vw; */
+}
+#mouse{
+    height:5vw;
+    width:5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+#page2-content{
+    width: 100%;
+    height: 100%;
+    padding: 11vh 4vh;
+    display: flex;
+    
+    justify-content: first baseline;
+    flex-direction: column;
+}
+#page2-nav{
+    display: flex;
+    padding-bottom: 3vh;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    font-size: 29px;
+    border-bottom: 1px solid black;
+    font-family: sans-serif;
+}
+#parta{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#parta h5{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#page2-nav h5{
+     font-family: sans-serif;
+    font-weight: 100;
+}
+#page2-content h4{
+    padding-top: 3vh;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 1.07;
+    font-family: sans-serif;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    margin-bottom: 40px;
+}
+#page3-top{
+    text-align: center;
+}
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#page3-top h4 span{
+    background-color: black;
+    color: white;
+    font-size: 0.7vw;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+#page3-top h2{
+    font-size: 4vw;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+#page3-element{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 8vw;
+    justify-content: space-between;
+}
+#page3-element .box{
+    height: 100%;
+    width: 32%;
+    position: relative;
+    border-radius: 5%;
+}
+#page3-element .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+}
+#page3-element .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in 0.3s;
+    border-radius: 5%;
+}
+#page3-element .box:hover img{
+    opacity: 0;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    padding: 11vh 4vh; 
+    background-color: black;
+    color: white;
+}
+#page4-content{
+    
+    width: 100%;  
+}
+#page4-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+#page4-top h4{
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+#page4-content h2{
+    padding-top: 15px;
+    border-top: 1px solid white;
+    font-family: sans-serif;
+    font-size: 3.3vw;
+    font-weight: 200;
+}
+#video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video video{
+    border: 0.5px solid white;
+    border-radius: 50%;
+}
+#seat{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+#seat h4{
+    font-family: sans-serif;
+}
+
+#page5{
+    height: 70vh;
+    width: 100%;
+    padding: 11vh 4vh; 
+}
+#page5-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+#page5-top h4{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    text-align: left;
+}
+#page5-content h2{
+    border-top: 1px solid black;
+    padding-top: 15px;
+    font-size: 3vw;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    padding: 11vh 4vh;
+}
+#page6-content h2{
+    font-size: 10vw;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+#swiper{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 400px !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img{
+    display: block;
+    width: 18%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 11vh 4vh;
+}
+#top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-left{
+    width: 50%;
+    height: 50%;
+    font-family: sans-serif;
+}
+#top-left h4{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+#top-left a{
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#top-right{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#one{
+    padding-right: 40px;   
+}
+#one h6{
+    font-family: sans-serif !important;
+    font-weight: 100;
+    font-size: 1vw;
+    padding: 5px;
+}
+#two{
+    padding-right: 20px;
+}
+#two h6{
+    font-family: sans-serif !important;
+    font-weight: 100;
+    font-size: 1vw;
+    padding: 5px;
+}
+#bottom{
+    margin-top: 200px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#bot-top{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bot-top-left h6{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+}
+#bot-top-right{ 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#bot-bot h1{
+    font-size: 14vw;
+}
+
+
